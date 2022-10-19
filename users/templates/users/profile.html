@@ -1,0 +1,14 @@
+{% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <div class="container">
+        <center>
+            <h1 style="color: ff8248;"> ~~~WELCOME TO PROFILE SECTION~~~</h1>
+            <br>
+        </center>
+        <h2>Name: {{user.username}}</h2>
+        <h2>Email: {{user.email}}</h2>
+    </div>
+{% endblock %}
